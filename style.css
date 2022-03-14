@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --background: hsl(0, 0%, 100%);
+  --color: hsl(200, 15%, 8%);
+}
+.other {
+  cursor: pointer;
+  background-color: var(--background-color);
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
+
+  display: inherit;
+  font-family: "Nunito Sans", sans-serif;
+}
+.search-term {
+  background-color: var(--background);
+  color: var(--background) !important;
+  border: 0;
+}
+body.dark {
+  background-color: hsl(207, 26%, 17%);
+  --background-color: hsl(207, 26%, 17%);
+  --color: hsl(0, 0%, 100%);
+  --background: hsl(209, 23%, 22%);
+}
+.dropdown-item {
+  cursor: pointer;
+}
+.head {
+  color: var(--color);
+}
+nav,
+.container-fluid,
+.navbar {
+  background-color: var(--background-color) !important;
+  color: var(--color) !important;
+}
+p {
+  margin: 0;
+}
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--color) !important;
+}
+
+.content {
+  background-color: var(--background-color) !important;
+  color: var(--color) !important;
+}
+.heading {
+  font-weight: 800;
+}
+.content p {
+  padding: 6px 0px;
+}
+.content span {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+input,
+input::placeholder,
+input:focus,
+input:active {
+  padding-left: 40px;
+
+  background-color: var(--background) !important;
+  color: var(--color) !important;
+  border: 0;
+}
+.dropdown > * {
+  background-color: var(--background) !important;
+  color: var(--color) !important;
+}
+.absolute {
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  background-color: beige;
+}
+.head {
+  font-size: 1rem;
+  letter-spacing: 0.01rem;
+  font-weight: 600;
+}
+
+.other {
+  font-size: 0.8rem;
+  letter-spacing: 0.4;
+}
+.containers {
+  width: 100%;
+}
+.containers-2 {
+}
+.containers-2 img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  padding: 0 14px 0 14px;
+}
+
+.containers img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-container {
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.box {
+  width: 120px;
+}
+
+@media (min-width: 800px) {
+  .head {
+    font-size: 1.8rem;
+    letter-spacing: 0.01rem;
+    font-weight: 600;
+  }
+  .other {
+    font-size: 1.6rem;
+    letter-spacing: 0.5;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .box {
+    width: 120px;
+  }
+  .containers-2 img {
+    object-fit: cover;
+    object-position: center;
+    width: 400px;
+  }
+  .breaks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
